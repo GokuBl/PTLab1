@@ -9,7 +9,7 @@ class TestJsonReader:
     @pytest.fixture()
     def file_and_data_content(self) -> tuple[str, DataType]:
         root_dir = os.path.dirname(os.path.abspath(__file__))
-        file_path = f'{root_dir}\\test_data.json'
+        file_path = f'{root_dir}/test_data.json'
 
         data = {'Иванов Иван Иванович': [('математика', 80),
                                          ('литература', 76),
