@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import argparse
-import sys
-
 from DataJsonReader import DataJsonReader
 from CalcRating import CalcRating
 from TextDataReader import TextDataReader
@@ -27,6 +25,7 @@ def main():
     jsonReader = DataJsonReader()
     jsonData = jsonReader.read(path)
     print("Json: ", jsonData)
+
 
 if __name__ == "__main__":
     main()
