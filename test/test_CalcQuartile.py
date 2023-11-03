@@ -16,8 +16,8 @@ class TestCalcQuartile:
                                                    ('химия', 61),
                                                    ('социология', 90)],
                           'Алексеев Петр Петрович': [('математика', 10),
-                                                   ('химия', 31),
-                                                   ('социология', 30)]
+                                                     ('химия', 31),
+                                                     ('социология', 30)]
                           }
         rating_scores: RatingsType = {
             "Иванов Иван Иванович": 82.0,
@@ -27,8 +27,8 @@ class TestCalcQuartile:
         return data, rating_scores
 
     def test_init_calc_quartile(self,
-                              input_data: tuple[DataType, RatingsType]
-                              ) -> None:
+                                input_data: tuple[DataType, RatingsType]
+                                ) -> None:
         calc_rating = CalcQuartile(input_data[0])
         assert input_data[0] == calc_rating.data
 
