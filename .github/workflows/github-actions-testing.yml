@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-
+      - jsonBranch
 jobs:
   build:
 

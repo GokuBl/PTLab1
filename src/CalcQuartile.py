@@ -11,8 +11,8 @@ class CalcQuartile:
 
     def calc(self):
         rating = CalcRating(self.data).calc()
-        ratingSortedByKeyValue = sorted(rating.values())
-        quartile = numpy.percentile(ratingSortedByKeyValue, 75)
+        rating_sorted_by_key_value = sorted(rating.values())
+        quartile = numpy.percentile(rating_sorted_by_key_value, 75)
         dict1 = {}
         for student in rating:
             if rating[student] > quartile:
